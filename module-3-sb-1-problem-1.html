@@ -28,21 +28,33 @@
         function startThings() {
             let romanNumeral // do not modify
             // your code goes here
-            let i = prompt("Please enter a number between 1 and 10")
-            const
-            if (i >= 1 && i <= 10) {
-                document.write(`The roman numeral for ${i} is `)
+            let userNumber = parseInt(prompt("Enter a whole number between 1 and 10"))
+            if (userNumber == 1) {
+                romanNumeral = "I"
+            } else if (userNumber == 2) {
+                romanNumeral = "II"
+            } else if (userNumber == 3) {
+                romanNumeral = "III"
+            } else if (userNumber == 4) {
+                romanNumeral = "IV"
+            } else if (userNumber == 5) {
+                romanNumeral = "V"
+            } else if (userNumber == 6) {
+                romanNumeral = "VI"
+            } else if (userNumber == 7) {
+                romanNumeral = "VII"
+            } else if (userNumber == 8) {
+                romanNumeral = "VIII"
+            } else if (userNumber == 9) {
+                romanNumeral = "IX"
+            } else if (userNumber == 10) {
+                romanNumeral = "X"
             } else {
-                document.write(`The number ${i} is not between 1 and 10.<br> Please select another number.`)
+                alert("Please enter a whole number between 1 and 10!")
+                romanNumeral = "try again"
             }
-
-
-
             // be sure to assign the roman numeral to the variable romanNumeral
             // it will be used to display it on the web page using the code below
-
-
-
             // do not modify start
             let outputDiv = document.getElementById('output')
             outputDiv.innerHTML = romanNumeral
